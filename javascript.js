@@ -66,3 +66,38 @@ if(arr_list1.length!=arr_list2.length){
     }
 }
 
+//date:24/07/2024
+ //1.merging the array
+     let arr=[1,2,3,4,5];
+     let arr2=[6,7,8,9,10]
+     console.log(...arr,...arr2)
+
+    //2.Array manipulate with Slice 
+    let arr3=[1,2,3,4,5,6,7,8,9,0];
+    console.log(arr3.slice(2,7))
+
+    //3.array spreading
+
+    const numbers = [1, 2, 3];
+    console.log(...numbers);
+    const solution= [...numbers, 4, 5, 6];
+    console.log(solution);
+
+    //4.checking element using includes
+
+    const ser = [1, 2, 3, 4, 5];
+    console.log(ser.includes(3)); // true
+    console.log(ser.includes(6));
+
+     //5.array with given length
+
+     let length = 5;
+    let newArray = Array.from({ length: length }, (v, i) => i + 1);
+    console.log(newArray);
+
+    let len = 5;
+    let array = [];
+    for (let i = 0; i < len; i++) {
+    array.push(i * 2);
+    }
+    console.log(array);
