@@ -101,3 +101,53 @@ if(arr_list1.length!=arr_list2.length){
     array.push(i * 2);
     }
     console.log(array);
+
+
+
+// date 31/07/2024
+
+//1. Converting Array of object
+let users = [
+  { id: 95, name: "Kumaran", age: 21 },
+  { id: 102, name: "Praveen", age: 21 },
+  { id: 64, name: "Deva", age: 21 }
+];
+
+let names = users.map(users => users.name);
+console.log(names);
+
+//2.removing array element by index number;
+ 
+let array2=["hi","hello","how","this"];
+let indexToRemove=2;
+let newArray=array2.filter((_,index)=>index !==indexToRemove);
+console.log(newArray);
+
+//3. inserting a item in specific position
+
+let arr = ["apple", "banana", "orange", "mango", "grapes", "pineapple"];
+let index_val = 3;
+let insert_ele = "guava";
+
+arr.splice(index_val, 0, insert_ele);
+
+console.log(arr);
+
+//4. Rotating Array
+
+
+let array = [1, 2, 3, 4, 5];
+let rotate_times=3;
+let rotate_Array = rotate(array, rotate_times);
+
+console.log(rotate_Array);
+
+function rotate(array, n) {
+  n = n % array.length;
+  return array.slice(n).concat(array.slice(0, n));
+}
+
+//5 Array deduplication
+const array_duplicate = [10,30,54,65,10,43,54];
+const order=[...new Set(array_duplicate)];
+console.log(order);
